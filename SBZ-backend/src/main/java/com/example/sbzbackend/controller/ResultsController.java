@@ -16,7 +16,7 @@ import com.example.sbzbackend.DTO.ResultsDTO;
 public class ResultsController
 {
     @Autowired
-    ResultsService resultsService;
+    private ResultsService resultsService;
 
     @GetMapping
     public ResponseEntity<?> GetResults(@RequestBody FiltersDTO filters)

@@ -3,7 +3,7 @@ package com.example.sbzbackend.DTO;
 public class FiltersDTO
 {
     String style;
-    String difficulty;
+    int difficulty;
     String missions;
     String achievements;
     String continent;
@@ -22,11 +22,11 @@ public class FiltersDTO
         this.style = style;
     }
 
-    public String getDifficulty()
+    public int getDifficulty()
     {
         return difficulty;
     }
-    public void setSDifficulty(String difficulty)
+    public void setSDifficulty(int difficulty)
     {
         this.difficulty = difficulty;
     }
