@@ -4,7 +4,7 @@ public class FiltersDTO
 {
     String style;
     int difficulty;
-    String missions;
+    int missions;
     String achievements;
     String continent;
 
@@ -31,11 +31,11 @@ public class FiltersDTO
         this.difficulty = difficulty;
     }
 
-    public String getMissions()
+    public int getMissions()
     {
         return missions;
     }
-    public void setMissions(String missions)
+    public void setMissions(int missions)
     {
         this.missions = missions;
     }
