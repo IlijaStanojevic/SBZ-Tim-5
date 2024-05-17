@@ -13,12 +13,14 @@ import com.example.sbzbackend.DTO.ResultsDTO;
 
 @RestController
 @RequestMapping("api/results")
+
 public class ResultsController
 {
     @Autowired
     private ResultsService resultsService;
 
-    @GetMapping
+    @PostMapping
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     public ResponseEntity<?> GetResults(@RequestBody FiltersDTO filters)
     {
         ResultsDTO results = resultsService.getResults(filters);
