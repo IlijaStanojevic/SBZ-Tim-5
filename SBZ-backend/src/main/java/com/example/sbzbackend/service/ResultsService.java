@@ -34,11 +34,6 @@ public class ResultsService
         countries.add(new Country("Caddo", "Chesapeake Bay", "Native", "America", 3, 1, true, false, false, i1));
     }
 
-    private int score(Country country, FiltersDTO filters)
-    {
-        return 1;
-    }
-
     public ResultsDTO getResults(FiltersDTO filters)
     {
         ResultsDTO results = new ResultsDTO();
@@ -49,5 +44,10 @@ public class ResultsService
         }
 
         return results;
+    }
+
+    private int score(Country country, FiltersDTO filters)
+    {
+        return 1;
     }
 }
